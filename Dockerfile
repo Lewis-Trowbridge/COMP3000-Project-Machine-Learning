@@ -1,7 +1,9 @@
 FROM alpine:latest AS downloader
-RUN apk --no-cache add wget unzip
-RUN wget https://drive.google.com/uc?export=download&id=1-M7OuoNgEK4CUVBwaknhxyxoh59Ws9eH -o model.zip
-RUN unzip model.zip
+RUN apk --no-cache add curl unzip
+RUN mkdir model
+RUN curl "https://drive.google.com/uc?export=download&id=1-M7OuoNgEK4CUVBwaknhxyxoh59Ws9eH" -L --output model/model.zip
+RUN ls
+RUN unzip model/model.zip
 
 FROM tensorflow/serving:latest
 COPY --from=downloader /model models/airquality
