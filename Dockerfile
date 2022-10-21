@@ -5,6 +5,6 @@ RUN curl "https://drive.google.com/uc?export=download&id=1-M7OuoNgEK4CUVBwaknhxy
 RUN unzip model/model.zip
 
 FROM tensorflow/serving:latest
-COPY --from=downloader /model models/airquality
+COPY --from=downloader /model models/airquality/1
 ENV MODEL_NAME=airquality
 # Use existing entrypoint
