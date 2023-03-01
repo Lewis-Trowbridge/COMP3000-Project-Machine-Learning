@@ -1,7 +1,7 @@
 FROM python:alpine AS downloader
 RUN apk --no-cache add curl unzip
 RUN curl "https://drive.google.com/uc?export=download&id=1-M7OuoNgEK4CUVBwaknhxyxoh59Ws9eH" -L --output airquality_models.zip
-RUN curl "https://drive.google.com/uc?export=download&id=1911_ZfbqaprQT6z1_ZTIVaYmB18J-3Zg" -L --output temp_models.zip
+RUN curl "https://liveplymouthac-my.sharepoint.com/:u:/r/personal/lewis_trowbridge_students_plymouth_ac_uk/Documents/Year%203/COMP3000/Models/temperature%203%20layer/temp_models.zip?download=1" -L --output temp_models.zip
 
 COPY "generate-serving-config.py" .
 RUN mkdir -p models/airquality/model
