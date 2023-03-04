@@ -6,7 +6,7 @@ onedrivedownloader.download(
     clean=True,
     force_download=True,
     unzip=True,
-    unzip_path="models/temperature"
+    unzip_path="models/temperature/1"
 )
 
 onedrivedownloader.download(
@@ -15,6 +15,6 @@ onedrivedownloader.download(
     clean=True,
     force_download=True,
     unzip=True,
-    unzip_path="models/airquality/model/1"
+    unzip_path="models/airquality/1"
 )
 

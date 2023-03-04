@@ -10,7 +10,7 @@ def get_model_serving_config(info: dict):
 
 path = pathlib.Path(".")
 
-paths = [ {"path": str(relative_path.absolute()), "name": relative_path.parent.name} for relative_path in path.glob("./models/**/model")]
+paths = [ {"path": str(relative_path.parent.parent.absolute()), "name": relative_path.parent.parent.name} for relative_path in path.glob("./models/**/keras_metadata.pb")]
 
 # Created config following https://www.tensorflow.org/tfx/serving/serving_config#model_server_configuration
 serving_config = f"""model_config_list {{
