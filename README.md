@@ -1,4 +1,4 @@
-# COMP3000 Project - Machine learning
+# COMP3000 Project - Predictions
 
 ## What is this?
 
