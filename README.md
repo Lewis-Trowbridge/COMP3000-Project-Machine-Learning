@@ -1,4 +1,6 @@
 # COMP3000 Project - Predictions
+#### Project title: EDDAP (Environmental Data Display and Predictions)
+#### Supervisor: Dr David Walker
 
 ## What is this?
 
@@ -38,3 +40,12 @@ This service uses Jupyter Notebooks and Tensorflow to produce machine learning m
 Training can be performed by installing Tensorflow and running the notebooks as any other.
 
 Hosting can be performed by building the dockerfile, which will pull the current models from OneDrive.
+
+
+## Project vision
+
+- For: researchers and the public
+- Who: need a better understanding of the climate crisis
+- The: environmental data dashboard
+- Is a: web application dashboard
+- That: can make predictions for the future of the environment and display environmental data such as air pollution in an easy-to-understand format
